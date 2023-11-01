@@ -11,12 +11,10 @@
         @if (Auth::user()->hasRole('akun_isi_formulir'))
             <p class="my-1 text-white bg-secondary p-1 rounded fs-3 fw-bold">MENUNGGU</p>
         @elseif (Auth::user()->hasRole('akun_diterima'))
-            <p class="my-1 text-white bg-primary p-1 rounded fs-3 fw-bold">Selamat, ananda "DITERIMA" di SDIT Harum
-                Jember
+            <p class="my-1 text-white bg-primary p-1 rounded fs-3 fw-bold">Selamat, ananda "DITERIMA" di TSL Islamic School
             </p>
         @elseif (Auth::user()->hasRole('akun_ditolak'))
-            <p class="my-1 text-white bg-danger p-1 rounded fs-3 fw-bold">Mohon Maaf ananda Belum Diterima di SDIT Harum
-                Jember</p>
+            <p class="my-1 text-white bg-danger p-1 rounded fs-3 fw-bold">Mohon Maaf ananda Belum Diterima di TSL Islamic School</p>
         @endif
     </div>
 
@@ -28,8 +26,8 @@
             </div>
             <div>
                 <p class="fs-5 text-center">
-                    Terima Kasih telah mengisi formulir pendaftaran di Web PPDB SDIT Harapan Umat Jember</p>
-                <p>Tahap selanjutnya adalah psikotest, yang dilaksanakan sesuai jadwal yang ditentukan. </p>
+                    Terima Kasih telah mengisi formulir pendaftaran di Web PPDB TSL Islamic School</p>
+                <p>Tahap selanjutnya adalah Interview, yang dilaksanakan sesuai jadwal yang ditentukan. </p>
                 <div class="btn-group w-75 my-3" role="group" aria-label="Basic example">
                     <a class="btn btn-orange" href="{{ route('student.timeline') }}">
                         Informasi Jadwal</a>

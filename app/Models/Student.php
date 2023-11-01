@@ -23,6 +23,6 @@ class Student extends Model
 
     public function programme()
     {
-        return $this->belongsTo(ProgrammeModel::class);
+        return $this->belongsTo(Programme::class);
     }
 }

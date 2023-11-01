@@ -57,6 +57,6 @@ class User extends Authenticatable
 
     public function programme()
     {
-        return $this->belongsTo(ProgrammeModel::class);
+        return $this->belongsTo(Programme::class);
     }
 }
