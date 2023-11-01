@@ -38,7 +38,7 @@ return new class extends Migration
             $table->string('kecamatan')->nullable();
             $table->string('kota')->nullable();
             $table->string('provinsi')->nullable();
-            $table->enum('parent_status','Orang tua Kandung', 'Wali')->nullable();
+            $table->enum('parent_status',['Orang tua Kandung', 'Wali'])->nullable();
             $table->string('dad')->nullable();
             $table->string('dad_edu')->nullable();
             $table->string('dad_occupation')->nullable();

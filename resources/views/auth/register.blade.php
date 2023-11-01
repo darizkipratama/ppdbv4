@@ -6,13 +6,29 @@
         <div class="col-12 col-md-6">
             <div class="text-center bg-white p-3 py-5 rounded">
                 <div class="px-0 px-md-5 mb-4">
-                    <img class="logo rounded-circle bg-orange p-1 mb-2" src="{{ asset('img/logosdit.png') }}" alt="logosdit" />
+                    <img src="{{ asset('img/TSL-Islamic-School-kecil.png') }}" alt="logosdit" />
                     <h4>Buat Akun PPDB</h4>
                     <hr />
                 </div>
                 <div class="px-0 px-md-5">
                     <form action="{{ route('register') }}" method="POST">
                         @csrf
+                        {{-- name --}}
+                        <div class="mb-2">
+                            <select class="form-control form-select form-control-lg @error('programme_id') is-invalid @enderror"
+                                name="programme_id" required >
+                                <option value=''>Pilih Program Sekolah</option>
+                                @foreach ($allProgrammes as $item)
+                                    <option value={{$item->id}}>{{$item->name}}</option>
+                                @endforeach
+                            </select>
+                            @error('name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="mb-2">&nbsp;</div>
                         {{-- name --}}
                         <div class="mb-2">
                             <input type="text" class="form-control form-control-lg @error('name') is-invalid @enderror"
@@ -64,6 +80,7 @@
                     <a href="{{ route('login') }}" class="btn btn-outline-dark btn-sm w-50 ">Login
                     </a>
                 </div>
+                
             </div>
         </div>
     </div>

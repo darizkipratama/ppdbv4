@@ -22,6 +22,7 @@ class User extends Authenticatable
         'name',
         'email_number',
         'password',
+        'programme_id',
     ];
 
     /**
@@ -52,5 +53,10 @@ class User extends Authenticatable
     public function document()
     {
         return $this->hasOne(Document::class);
+    }
+
+    public function programme()
+    {
+        return $this->belongsTo(ProgrammeModel::class);
     }
 }
