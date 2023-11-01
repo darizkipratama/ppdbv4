@@ -23,5 +23,6 @@ class DatabaseSeeder extends Seeder
         $this->call(TimelineSeeder::class);
         $this->call(CostCatSeeder::class);
         $this->call(SettingSeeder::class);
+        $this->call(ProgrammeSeeder::class);
     }
 }

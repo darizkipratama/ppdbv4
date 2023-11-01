@@ -16,9 +16,9 @@
                     {{-- @endforeach --}}
                 @endif
                 <div class="p-0 p-md-3 text-center ">
-                    <img class="logo rounded-circle bg-orange p-1 mb-3" src="{{ asset('img/logosdit.png') }}"
+                    <img class="logo p-1 mb-3" src="{{ asset('img/TSL-Islamic-School-kecil.png') }}"
                         alt="logosdit" />
-                    <p class="fs-4 mb-0">Login Website PPDB </p>
+                    <p class="fs-4 mb-0">Login Aplikasi PPDB </p>
                     <hr>
                     <!-- <h1>ADMIN PPDB</h1> -->
                     <form class="mt-4" action="{{ route('login') }}" method="POST">
@@ -57,8 +57,8 @@
                     </form>
                 </div>
             </div>
-            <div class="col-6 p-5 bg-orange d-none d-md-block text-center">
-                <img class="img-fluid pt-3" src="{{ asset('img/gbr.png') }}" alt="gbr" />
+            <div class="col-6 p-5 bg-dark-grey d-none d-md-block text-center">
+                <img class="img-fluid pt-3" src="{{ asset('img/TSL-Islamic-School-Student.png') }}" alt="gbr" />
             </div>
         </div>
     </div>

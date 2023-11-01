@@ -9,7 +9,7 @@
                     <img src="{{ asset('/img/gbr.png') }}" class="img" alt="logoppdb" />
                 </div>
                 <p class="fs-2 my-4 text-white">
-                    Formulir Pendaftaran Siswa Baru SDIT Harapan Umat Jember
+                    Formulir Pendaftaran Siswa Baru </br>TSL Islamic School
                 </p>
                 <hr class="hr" />
                 {{-- <span class="text-light">
@@ -21,6 +21,19 @@
                     <!-- fieldsets -->
                     <fieldset>
                         <div class="form-card">
+                            <p class="fs-4">Program Yang Didaftar</p>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="full_name">Nama Program
+                                        </label>
+                                        <input class="form-control bg-light" id="programme_name" name="programme_name" type="text"
+                                            value="{{ $programName }}" required readonly />
+                                        <input type="hidden" value="{{ $programId }}"/>
+                                    </div>
+                                </div>
+                            </div>
+
                             <p class="fs-4">Identitas Calon Siswa</p>
                             <div class="row">
                                 <div class="col-12 col-md-6">
@@ -41,9 +54,8 @@
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label" for="school_origin">Asal TK</label>
-                                <input class="form-control" id="school_origin" name="school_origin" type="text"
-                                    required />
+                                <label class="form-label" for="school_origin">Asal sekolah Sebelumnya (Jika Ada)</label>
+                                <input class="form-control" id="school_origin" name="school_origin" type="text" />
                             </div>
 
                             <div class="mb-3">
@@ -53,6 +65,12 @@
                                     <option value="laki-laki">Laki-Laki</option>
                                     <option value="perempuan">Perempuan</option>
                                 </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="nik">NIK</label>
+                                <input class="form-control" id="nik" name="nik" type="text"
+                                    required />
                             </div>
 
                             <div class="row">
@@ -70,6 +88,39 @@
                                             placeholder="Bulan/Hari/Tahun" />
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="child_of">Anak Ke</label>
+                                        <input class="form-control" id="child_of" name="child_of" type="number"
+                                            required />
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="child_from">Dari</label>
+                                        <input class="form-control" name="child_from" type="number" id="child_from"
+                                           required />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="language_home">Bahasa Yang Digunakan Di Rumah</label>
+                                <input class="form-control" id="language_home" name="language_home" type="text"
+                                    required />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="blood_type">Golongan Darah</label>
+                                <select class="form-select" id="blood_type" name="blood_type">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>O</option>
+                                    <option>AB</option>
+                                </select>
                             </div>
 
                             <div class="mb-3">
@@ -95,16 +146,12 @@
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label class="form-label" for="saudara_kandung_di_sdit">
-                                    Jumlah saudara kandung yang masih sekolah di SDIT Harum Jember
+                                <label class="form-label" for="parent_status">
+                                    Status Orang Tua
                                 </label>
-                                <select class="form-select" id="saudara_kandung_di_sdit" name="saudara_kandung_di_sdit">
-                                    <option>0</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                <select class="form-select" id="parent_status" name="parent_status">
+                                    <option>Orang Tua Kandung</option>
+                                    <option>Wali</option>
                                 </select>
                             </div>
                             <hr />
@@ -247,6 +294,11 @@
                                 <label class="form-label" for="dad_phone">Nomor Telpon Ayah</label>
                                 <input class="form-control" id="dad_phone" name="dad_phone" type="number" />
                             </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="dad_email">Email Ayah</label>
+                                <input class="form-control" id="dad_email" name="dad_email" type="text" />
+                            </div>
                         </div>
 
                         <div class="col-12 col-md-6">
@@ -334,6 +386,10 @@
                             <div class="mb-3">
                                 <label class="form-label" for="mom_phone">Nomor Telpon Ibu</label>
                                 <input class="form-control" id="mom_phone" name="mom_phone" type="number" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="mom_email">Email Ibu</label>
+                                <input class="form-control" id="mom_email" name="mom_email" type="text" />
                             </div>
                         </div>
                     </div>

@@ -2,7 +2,7 @@
     <div class="container ">
         <div class="row text-white pt-md-5 pt-4 text-center text-md-start">
             <div class="col-12 col-md-6">
-                <h3>SDIT HARAPAN UMAT JEMBER</h3>
+                <h3>TSL Islamic School</h3>
                 <p class="fs-6 pt-3">
                     Jl. Danau Toba Gg. Islamic Center, Tegalgede
                     <br />Kec. Sumbersari, Kabupaten Jember

@@ -9,7 +9,7 @@
                 <div class="col-12 col-md-6 pt-md-4 center">
                     <div class="pt-3 pt-md-5 ">
                         <h2 class="fs-2 fw-bold bg-dark py-2 px-3 text-white d-inline-block rounded">
-                            PPDB SDIT HARAPAN UMAT JEMBER
+                            Sekolah Islam Yayasan Tarbiyah Sunnah Learning
                         </h2>
                     </div>
                     <div class="py-3">

@@ -11,6 +11,7 @@ use App\Http\Controllers\SettingController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TimelineController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Models\Timeline;
 
 /*
@@ -24,13 +25,13 @@ use App\Models\Timeline;
 |
 */
 
-Route::get('/', [LandingController::class, 'index'])->name('landing')->middleware('guest');
+// Route::get('/', [LandingController::class, 'index'])->name('landing')->middleware('guest');
 
 Auth::routes();
 Route::middleware('auth')->group(function () {
     // home
     Route::get('/home', [HomeController::class, 'index'])->name('home');
-
+    Route::get('/', [RegisterController::class, 'index'])->name('registration')->middleware('guest');
     // admin
     Route::middleware('role:admin')->group(function () {
         Route::prefix('admin')->group(function () {

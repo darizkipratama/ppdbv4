@@ -20,4 +20,9 @@ class Student extends Model
     {
         return $this->belongsTo(CostCategory::class);
     }
+
+    public function programme()
+    {
+        return $this->belongsTo(Programme::class);
+    }
 }

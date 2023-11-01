@@ -1,6 +1,6 @@
 <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light py-2 fs-5 sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="{{ route('landing') }}">
+        <a class="navbar-brand" href="{{ route('login') }}">
             <img src="{{ asset('img/logoppdb.png') }}" alt="logoppdb" class="imglogo" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -10,9 +10,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-md-2">
                 {{-- @dd(Request::url()) --}}
-                <li class="nav-item mx-md-2 mx-0">
+                {{-- <li class="nav-item mx-md-2 mx-0">
                     <a class="nav-link hover px-3" href="#beranda">BERANDA</a>
-                </li>
+                </li> --}}
                 <li class="nav-item mx-md-2 mx-0">
                     <a class="nav-link hover px-3" href="#panduan">PANDUAN</a>
                 </li>

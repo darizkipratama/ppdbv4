@@ -26,7 +26,8 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('student.form');
+        $programEnrolled = Auth::user()->programme;
+        return view('student.form')->with('programId', $programEnrolled->id)->with('programName', $programEnrolled->name);
     }
 
     /**
@@ -41,7 +42,6 @@ class StudentController extends Controller
 
         $data = $request->all();
         $data['user_id'] = $id;
-
         Student::create($data);
         $user->syncRoles('akun_isi_formulir');
         return redirect()->route('student.home');
