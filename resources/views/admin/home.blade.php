@@ -11,8 +11,7 @@
                 src="{{ asset('img/administrator.png') }}" alt="user" />
         </div>
         <p class="fs-4 m-0 text-center">
-            Selamat datang Admin di Dashboard website PPDB SDIT Harapan Umat
-            Jember
+            Selamat datang Admin di Dashboard website PPDB TSL Islamic School
         </p>
 
         <div class="row py-3">

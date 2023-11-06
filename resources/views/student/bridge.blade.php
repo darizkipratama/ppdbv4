@@ -17,11 +17,13 @@
                     @endif
                     <div class="text-center">
                         <img class="logobridge rounded p-1 mb-2" src="{{ asset('img/user.png') }}" alt="user" />
-                        <p class="fs-4 text-black"> Assalamualaikum, <strong>{{ $user->name }} </strong> </p>
+                        <p class="fs-4 text-black">ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ, <br/>
+                             <strong>{{ $user->name }} </strong> 
+                        </p>
                     </div>
                     <ul class="list-group fs-5 mb-3">
                         <li class="list-group-item">
-                            Sebelum melanjutkan pendaftaran, lakukan pembayaran
+                            Untuk melanjutkan pendaftaran, silahkan melakukan pembayaran
                             terlebih dahulu untuk <b>mengaktifkan Akun</b>.
                         </li>
                         <li class="list-group-item">
@@ -48,10 +50,10 @@
                         <li class="list-group-item">
                             Akun akan aktif dalam 1 x 24 jam, jika akun belum aktif silahkan hubungi ke
                             @desktop
-                                <a href="https://web.whatsapp.com/send/?phone=6285232213939" target="_blank"
+                                <a href="https://web.whatsapp.com/send/?phone=62895377710900" target="_blank"
                                     class="btn btn-orange"> No. WA Admin</a>
                             @elsedesktop
-                                <a href="https://wa.me/6285232213939" target="_blank" class="btn btn-orange"> No. WA
+                                <a href="https://wa.me/62895377710900" target="_blank" class="btn btn-orange"> No. WA
                                     Admin</a>
                             @enddesktop
                         </li>
