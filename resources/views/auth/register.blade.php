@@ -7,10 +7,15 @@
             <div class="text-center bg-white p-3 py-5 rounded">
                 <div class="px-0 px-md-5 mb-4">
                     <img src="{{ asset('img/TSL-Islamic-School-kecil.png') }}" alt="logosdit" />
-                    <h4>Buat Akun PPDB</h4>
+                    <h4>Buat Akun PPDB TSL Islamic</h4>
                     <hr />
                 </div>
+                <div class="alert alert-danger" role="alert">
+                    A simple danger alert—check it out!
+                </div>
+                
                 <div class="px-0 px-md-5">
+                
                     <form action="{{ route('register') }}" method="POST">
                         @csrf
                         {{-- name --}}
