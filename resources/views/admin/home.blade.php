@@ -8,7 +8,7 @@
     <div class="bg-white rounded p-3 text-center min-vh-100">
         <div class="bg-orange backheight position-relative rounded">
             <img class="logouser p-2 rounded-circle bg-white border border-5 border-orange position-absolute"
-                src="{{ asset('img/administrator.png') }}" alt="user" />
+                src="{{ asset('img/TSL-Islamic-School-kecil.png') }}" alt="user" />
         </div>
         <p class="fs-4 m-0 text-center">
             Selamat datang Admin di Dashboard website PPDB TSL Islamic School

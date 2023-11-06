@@ -10,12 +10,14 @@
         @forelse ($data as $d)
             <a href="{{ URL::previous() }}" class="btn btn-success btn-sm"><i class="bi bi-arrow-left-circle"></i>
                 Kembali</a>
-            <p class="fs-5 text-center">Bukti pembayaran {{ $d->name }}</p>
+            <p class="fs-5 text-center">Bukti pembayaran/transfer {{ $d->name }}</p>
             <hr>
             {{-- ini settingan untuk hosting --}}
-            <img src="{{ url('storage/public/img-document/' . $d->document) }}" alt="document" class="img-fluid">
+            <img src="{{ asset('storage/img-document/' . $d->document) }}" alt="document" class="img-fluid">
+            @break
         @empty
             <p class="fs-5 text-center">Belum ada bukti pembayaran</p>
         @endforelse
+        
     </div>
 @endsection
