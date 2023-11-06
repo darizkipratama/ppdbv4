@@ -48,7 +48,7 @@ class StudentController extends Controller
 
         $updatedCapacity = Programme::find($programmeId);
         $num_pendaftar = $updatedCapacity->pendaftar_ikhwan;
-        $updatedCapacity->pendaftar_ikhwan = $num_pendaftar++;
+        $updatedCapacity->pendaftar_ikhwan = $num_pendaftar+1;
         $updatedCapacity->save();
 
         $user->syncRoles('akun_isi_formulir');
