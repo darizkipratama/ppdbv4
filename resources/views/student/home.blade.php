@@ -34,7 +34,7 @@
                     <a class="btn btn-primary" href="{{ route('student.profile') }}">
                         Informasi pendaftar</a>
                 </div>
-                <img src="{{ asset('img/rincian.svg') }}" alt="imgrincian" class="img-fluid">
+                
             </div>
         </div>
     @elseif (Auth::user()->hasRole('akun_diterima'))

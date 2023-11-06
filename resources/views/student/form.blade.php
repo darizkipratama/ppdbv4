@@ -393,6 +393,74 @@
                             </div>
                         </div>
                     </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <p class="fs-4">Riwayat Kesehatan Anak</p>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="history_ofillness">Riwayat Penyakit</label>
+                                <textarea cols="8" rows="2" class="form-control" id="history_ofillness" name="historyOfIllness"></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="allergic">Alergi/Kondisi Yang Perlu Diperhatikan</label>
+                                <input class="form-control" id="allergic" name="allergic" type="text" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="special_medication">Pengobatan/Obat Khusus Yang Harus Diberikan</label>
+                                <textarea cols="8" rows="2" class="form-control" id="special_medication" name="special_medication"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="food_allergic">Makanan Yang Tidak Boleh Diberikan</label>
+                                <textarea cols="8" rows="2" class="form-control" id="food_allergic" name="food_allergic"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <p class="fs-4">Informasi Khusus</p>
+                            <div class="mb-3">
+                                <label class="form-label" for="emergency_contact">Kontak Yang Bisa Dihubungi Pada Saat Darurat</label>
+                                <input class="form-control" id="emergency_contact" name="emergency_contact" type="number"/>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="hobby">Hobi Anak</label>
+                                <input class="form-control" id="hobby" name="hobby" type="text" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="sp_characteristic">Karakteristik Khusus</label>
+                                <input class="form-control" id="sp_characteristic" name="sp_characteristic" type="text" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="sp_company">Perlu Pendampingan Khusus </label>
+                                <select class="form-select" id="sp_company" name="sp_company">
+                                    <option value=0>Tidak</option>
+                                    <option value=1>Ya</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="playgroup_before">Lama Di Sekolah Sebelumnya </label>
+                                <input class="form-control" id="playgroup_before" name="playgroup_before" type="text" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <p class="fs-4">Catatan Lainnya</p>
+                            <div class="mb-3">
+                                <label class="form-label" for="specialnote_school">Catatan Khusus Untuk Sekolah</label>
+                                <textarea cols="8" rows="2" class="form-control" id="specialnote_school" name="specialnote_school"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="parent_note">Harapan Orang Tuan Terhadap Kami</label>
+                                <textarea cols="8" rows="2" class="form-control" id="parent_note" name="parent_note"></textarea>
+                            </div>
+                        </div>
+                    </div>
                     <input type="submit" class="btn btn-orange btn-lg w-100 mt-3"
                         onclick="return confirm('Pastikan Data yang anda kirim sudah benar!')" value="Simpan Data">
                 </form>

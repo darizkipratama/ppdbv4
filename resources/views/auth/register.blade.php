@@ -7,12 +7,17 @@
             <div class="text-center bg-white p-3 py-5 rounded">
                 <div class="px-0 px-md-5 mb-4">
                     <img src="{{ asset('img/TSL-Islamic-School-kecil.png') }}" alt="logosdit" />
-                    <h4>Buat Akun PPDB TSL Islamic</h4>
+                    <h4>Buat Akun PPDB TSL Islamic School</h4>
                     <hr />
                 </div>
-                <div class="alert alert-danger" role="alert">
-                    A simple danger alert—check it out!
-                </div>
+
+                @foreach ($allProgrammes as $item)
+                    @if($item->kuota_ikhwan <= $item->pendaftar_ikhwan)
+                    <div class="alert alert-danger" role="alert">
+                        Mohon Maaf, Kuota Untuk Program ${{$item->name}}, silahkan hubungi HELPDESK kami untuk informasi lebih lanjut
+                    </div>
+                    @endif
+                @endforeach
                 
                 <div class="px-0 px-md-5">
                 

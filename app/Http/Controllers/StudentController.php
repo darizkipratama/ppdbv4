@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\Student;
+use App\Models\Programme;
 use App\Models\CostCategory;
 use Illuminate\Http\Request;
 use App\Exports\StudentExport;
@@ -39,10 +40,17 @@ class StudentController extends Controller
 
         $user = Auth::user();
         $id = $user->id;
+        $programmeId = $user->programme->id;
 
         $data = $request->all();
         $data['user_id'] = $id;
         Student::create($data);
+
+        $updatedCapacity = Programme::find($programmeId);
+        $num_pendaftar = $updatedCapacity->pendaftar_ikhwan;
+        $updatedCapacity->pendaftar_ikhwan = $num_pendaftar++;
+        $updatedCapacity->save();
+
         $user->syncRoles('akun_isi_formulir');
         return redirect()->route('student.home');
     }

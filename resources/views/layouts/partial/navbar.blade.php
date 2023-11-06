@@ -1,6 +1,6 @@
 <nav class="row py-3 gx-0 px-3 px-md-4 bg-white">
     <div class="col-6">
-        <img src="{{ asset('img/logoppdb.png') }}" alt="logoppdb" class="logonav" />
+        <img src="{{ asset('img/TSL-Islamic-School-kecil.png') }}" alt="logoppdb" class="logonav" />
     </div>
 
     <div class="col-6 text-end">

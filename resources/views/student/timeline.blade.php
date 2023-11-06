@@ -5,14 +5,15 @@
 @section('content')
     @include('layouts.partial.name')
     <div class="bg-white rounded p-3 min-vh-100">
-        <p class="text-center fs-5 m-0">Timeline PPDB SDIT Harum Jember</p>
+        <p class="text-center fs-5 m-0">Timeline PPDB TSL ISLAMIC SCHOOL</p>
         <div class="bg-orange p-1 text-white text-center rounded">
             <p class="m-0">Tanggal sekarang :
                 <span id="time"> 'time' </span>
             </p>
         </div>
         <hr />
-        <div class="table-responsive">
+        <h5> Maaf Saat ini data belum tersedia, silahkan kontak helpdesk kami untuk informasi lebih lanjut
+        {{-- <div class="table-responsive">
             <table class="table">
                 <thead>
                     <tr>
@@ -34,7 +35,7 @@
                 </tbody>
             </table>
         </div>
-    </div>
+    </div> --}}
 @endsection
 @push('scripts')
     <script>
