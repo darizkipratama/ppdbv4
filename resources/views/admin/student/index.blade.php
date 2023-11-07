@@ -15,8 +15,8 @@
                 <thead>
                     <tr>
                         <th class="text-center" scope="col">#</th>
-                        <th class="text-center" scope="col">Nama</th>
-                        <th class="text-center" scope="col">Asal Sekolah</th>
+                        <th class="text-center" scope="col">Program</th>
+                        <th class="text-center" scope="col">Nama Calon Siswa</th>
                         <th class="text-center" scope="col">No. Handphone</th>
                         <th class="text-center" scope="col">Status</th>
                         <th class="text-center" scope="col">Detail</th>
@@ -27,8 +27,8 @@
                     @foreach ($students as $student)
                         <tr>
                             <td>{{ $loop->iteration }}</td>
+                            <td>{{ $student->programme->name }}</td>
                             <td>{{ $student->full_name }}</td>
-                            <td>{{ $student->school_origin }}</td>
                             <td>{{ $student->user->email_number }}</td>
                             <td>{{ $student->user->roles->first()->name }}</td>
                             <td>

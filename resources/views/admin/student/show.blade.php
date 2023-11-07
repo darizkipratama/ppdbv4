@@ -1,6 +1,6 @@
 @extends('layouts.dashboard')
 
-@section('title', 'Detail User Page')
+@section('title', 'Detail Calon Siswa')
 
 @section('content')
 
@@ -23,12 +23,22 @@
                     type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"> Orang
                     Tua</button>
             </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes-tab-pane"
+                    type="button" role="tab" aria-controls="notes-tab-pane" aria-selected="false"> Catatan
+                    Tambahan</button>
+            </li>
         </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                 tabindex="0">
                 <table class="table">
+                    <p class="badge bg-orange mt-3">Data Calon Siswa</p>
                     <tbody>
+                        <tr>
+                            <td class="width">Program Yang Dipilih</td>
+                            <td>{{ $student->programme->name }}</td>
+                        </tr>
                         <tr>
                             <td class="width">Nama</td>
                             <td>{{ $student->full_name }}</td>
@@ -60,17 +70,60 @@
                             <td>{{ $student->special_needs }}</td>
                         </tr>
                         <tr>
-                            <td>Jumlah saudara kandung yang masih sekolah di SDIT Harum Jember</td>
-                            <td>{{ $student->saudara_kandung_di_sdit }}</td>
+                            <td>Anak Ke</td>
+                            <td>{{ $student->child_of }} dari {{ $student->child_from }}</td>
                         </tr>
                         <tr>
                             <td>Tinggal bersama</td>
                             <td>{{ $student->living }}</td>
                         </tr>
+                        <tr>
+                            <td>Status Orang Tua</td>
+                            <td>{{ $student->parent_status }}</td>
+                        </tr>
+                        <tr>
+                            <td>Bahasa Yang Digunakan Sehari-hari Di Rumah</td>
+                            <td>{{ $student->language_home }}</td>
+                        </tr>
+                        <tr>
+                            <td>Golongan Darah</td>
+                            <td>{{ $student->blood_type }}</td>
+                        </tr>
+                        <tr>
+                            <td>Riwayat Penyakit</td>
+                            <td>{{ $student->history_ofillness }}</td>
+                            <td>Riwayat Alergi</td>
+                            <td>{{ $student->allergic }}</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Pengobatan/Obat Khusus Yang Harus Diberikan</td>
+                            <td>{{ $student->special_medication }}</td>
+                        </tr>
+                        <tr>
+                            <td>Makanan Yang Tidak Boleh Diberikan</td>
+                            <td>{{ $student->food_allergic }}</td>
+                        </tr>
+                        <tr>
+                            <td>Hobi</td>
+                            <td>{{ $student->hobby }}</td>
+                        </tr>
+                        <tr>
+                            <td>Karakteristik Khusus</td>
+                            <td>{{ $student->sp_characteristic }}</td>
+                        </tr>
+                        <tr>
+                            <td>Perlu Pendampingan Khusus</td>
+                            <td>{{ $student->sp_company }}</td>
+                        </tr>
+                        <tr>
+                            <td>Lama Di Sekolah Sebelumnya</td>
+                            <td>{{ $student->playgroup_before }}</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="1">
                 <p class="badge bg-orange mt-3">Data Ayah</p>
                 <table class="table">
                     <tbody>
@@ -93,6 +146,8 @@
                         <tr>
                             <td>HP</td>
                             <td>{{ $student->dad_phone }}</td>
+                            <td>Email</td>
+                            <td>{{ $student->dad_email }}</td>
                         </tr>
                     </tbody>
                 </table>
@@ -118,6 +173,23 @@
                         <tr>
                             <td>Hp</td>
                             <td>{{ $student->mom_phone }}</td>
+                            <td>Email</td>
+                            <td>{{ $student->mom_email }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="notes-tab-pane" role="tabpanel" aria-labelledby="notes-tab" tabindex="2">
+                <p class="badge bg-orange mt-3">Catatan Tambahan</p>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td class="width">Catatan Khusus Untuk Sekolah</td>
+                            <td>{{ $student->specialnote_school }}</td>
+                        </tr>
+                        <tr>
+                            <td>Harapan Orang Tua Terhadap Sekolah</td>
+                            <td>{{ $student->parent_note }}</td>
                         </tr>
                     </tbody>
                 </table>

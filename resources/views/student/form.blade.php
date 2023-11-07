@@ -400,7 +400,7 @@
 
                             <div class="mb-3">
                                 <label class="form-label" for="history_ofillness">Riwayat Penyakit</label>
-                                <textarea cols="8" rows="2" class="form-control" id="history_ofillness" name="historyOfIllness"></textarea>
+                                <textarea cols="8" rows="2" class="form-control" id="history_ofillness" name="history_ofillness"></textarea>
                             </div>
 
                             <div class="mb-3">
@@ -456,7 +456,7 @@
                                 <textarea cols="8" rows="2" class="form-control" id="specialnote_school" name="specialnote_school"></textarea>
                             </div>
                             <div class="mb-3">
-                                <label class="form-label" for="parent_note">Harapan Orang Tuan Terhadap Kami</label>
+                                <label class="form-label" for="parent_note">Harapan Orang Tua Terhadap Kami</label>
                                 <textarea cols="8" rows="2" class="form-control" id="parent_note" name="parent_note"></textarea>
                             </div>
                         </div>

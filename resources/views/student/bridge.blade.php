@@ -28,7 +28,7 @@
                         </li>
                         <li class="list-group-item">
                             Biaya pendaftaran sebesar:
-                            <span class="badge bg-orange">Rp 300.000</span>, pembayaran melalui
+                            <span class="badge bg-orange">Rp {{ number_format($user->programme->entrance_fee) }}</span>, pembayaran melalui
                             rekening berikut <span class="badge bg-orange">BSI 1551-1441-07</span><br />
                             a.n TSL ISLAMIC SCHOOL
                         </li>
@@ -44,7 +44,6 @@
                                     upload
                                 </button>
                             @endif
-
                         </li>
 
                         <li class="list-group-item">
