@@ -49,10 +49,10 @@
                         <li class="list-group-item">
                             Akun akan aktif dalam 1 x 24 jam, jika akun belum aktif silahkan hubungi ke
                             @desktop
-                                <a href="https://web.whatsapp.com/send/?phone=62895377710900" target="_blank"
+                                <a href="https://web.whatsapp.com/send/?phone=6285173396002" target="_blank"
                                     class="btn btn-orange"> No. WA Admin</a>
                             @elsedesktop
-                                <a href="https://wa.me/62895377710900" target="_blank" class="btn btn-orange"> No. WA
+                                <a href="https://wa.me/6285173396002" target="_blank" class="btn btn-orange"> No. WA
                                     Admin</a>
                             @enddesktop
                         </li>

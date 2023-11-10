@@ -5,7 +5,7 @@
 
     <div class="col-6 text-end">
         <div class="d-flex justify-content-end">
-            <a class="btn btn-orange text-white me-2" target="_blank" href="https://wa.me/6285232213939/">
+            <a class="btn btn-orange text-white me-2" target="_blank" href="https://wa.me/6285173396002/">
                 <i class="bi bi-chat-left-text"></i>
             </a>
             <div>

@@ -15,6 +15,7 @@
                     <tr>
                         <th class="text-center" scope="col">#</th>
                         <th class="text-center" scope="col">Tgl_Daftar</th>
+                        <th class="text-center" scope="col">Program Yang Didaftarkan</th>
                         <th class="text-center" scope="col">Nama</th>
                         <th class="text-center" scope="col">No. HP</th>
                         <th class="text-center" scope="col">Status</th>
@@ -28,6 +29,7 @@
                         <tr>
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $user->created_at->isoFormat('DD/MM/YY') }} </td>
+                            <td>{{ $user->programme->name }}</td>
                             <td>{{ $user->name }}</td>
                             <td>{{ $user->email_number }}</td>
                             <td>{{ $user->roles->first()->name }}</td>
