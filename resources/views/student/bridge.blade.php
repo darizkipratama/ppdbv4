@@ -40,7 +40,7 @@
                                     upload</button>
                             @else
                                 <button type="button" class="btn btn-success align-middle" data-bs-toggle="modal"
-                                    data-bs-target="#document">
+                                    data-bs-target="#klausul">
                                     upload
                                 </button>
                             @endif
@@ -99,7 +99,8 @@
             </div>
         </div>
     </div>
-    @include('student.upload')
+
+    @include('student.klausul')
 @endsection
 @push('css')
     <style>
